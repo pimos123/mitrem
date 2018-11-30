@@ -1,0 +1,63 @@
+<app-content>
+  <br><br>
+    <form [formGroup]="form" (submit) = "onSubmit()">
+      <!--<div class="row">
+        <label for="">รหัส</label>
+        <input type="text" class="form-control"
+        formControlName="PERSON_CODE" >
+      </div>
+      <br>
+      <div class="form-group row">
+        <label for="">คำนำหน้าชื่อ</label>
+        <div class="col-md-5">
+          <select class="form-control" formControlName="INITIAL_CODE">
+            <option selected="selected" value="นาย">นาย</option>
+            <option selected="selected" value="นาง">นาง</option>
+            <option selected="selected" value="นางสาว">นางสาว</option>
+          </select>
+        </div>
+      </div>
+        <div class="row">
+            <label for="">ชื่อ</label>
+            <input type="ntext" class="form-control" 
+            formControlName="NAME">
+          </div>
+          <div class="row">
+              <label for="">นามสกุล</label>
+              <input type="text" class="form-control" 
+              formControlName="LASTNAME">
+            </div>
+            <br>
+            <div class="form-group row">
+              <label for="">เพศ</label>
+              <div class="col-md-5">
+                <select class="form-control" formControlName="GENDER">
+                  <option selected="selected" value="M">M</option>
+                  <option selected="selected" value="S">S</option>
+                </select>
+              </div>
+            </div>
+                <div class="row">
+                    <label for="">อายุ</label>
+                    <input type="text" class="form-control"
+                    formControlName="AGE" >
+                  </div>
+                  <br>      -->
+                  <div class="row">
+                    <label for="">น้ำหนัก (kg):</label>
+                    <input [(ngModel)] = 'nweight' type="number" name="nweight" class="form-control"
+                    formControlName="WEIGHT" >
+                  </div>
+                  <div class="row">
+                    <label for="">ส่วนสูง (cm):</label>
+                    <input [(ngModel)] = 'nheight' type="number" name="nheight" class="form-control"
+                    formControlName="HEIGHT" >
+                  </div>
+
+                
+          <br>
+          <div class="row">
+              <button type="submit" class="btn btn-success">บันทึก</button>
+          </div>
+    </form>
+</app-content>
